@@ -32,6 +32,11 @@ return array(
 
 	// application components
 	'components'=>array(
+		
+		'mycomponent' => array(
+			'class'	=> 'application.components.SomeComponent.php',
+		),
+
 		'user'=>array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
@@ -69,7 +74,7 @@ return array(
 			'routes'=>array(
 				array(
 					'class'=>'CFileLogRoute',
-					'levels'=>'error, warning',
+					'levels'=>'error, warning,info',
 				),
 				// uncomment the following to show log messages on web pages
 				/*
